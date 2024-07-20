@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      background: #eef;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #sky.hidden {
+      display: none;
+    }
+
+    #sky {
+      margin-top: -60px;
+      perspective: 400px;
+      filter: drop-shadow(0px 150px 10px rgba(0, 0, 0, 0.2));
+    }
+
+    .bird {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      transform: rotate(45deg);
+      animation: fly 5s linear infinite;
+    }
+
+    .bird div {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .wing-left, .wing-right {
+      animation: flap 0.5s infinite;
+    }
+
+    .wing-left {
+      border-width: 25px 25px 0 0;
+      border-color: blue transparent transparent transparent;
+      transform: rotate(-45deg);
+      left: 50%;
+    }
+
+    .wing-right {
+      border-width: 25px 0 0 25px;
+      border-color: blue transparent transparent transparent;
+      transform: rotate(45deg);
+      right: 50%;
+    }
+
+    .body {
+      width: 30px;
+      height: 30px;
+      background-color: blue;
+      top: 25px;
+      left: 25px;
+    }
+
+    @keyframes fly {
+      0% { transform: rotate(45deg) translate(0, 0); }
+      100% { transform: rotate(45deg) translate(200px, 200px); }
+    }
+
+    @keyframes flap {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(-45deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <button id="animateButton">Animate Bird</button>
+  <div id="sky" class="hidden">
+    <div class="bird">
+      <div class="wing-left"></div>
+      <div class="wing-right"></div>
+      <div class="body"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('animateButton').addEventListener('click', function() {
+      const sky = document.createElement('div');
+      sky.id = 'sky';
+      document.body.appendChild(sky);
+
+      const bird = document.createElement('div');
+      bird.className = 'bird';
+      sky.appendChild(bird);
+
+      const wingLeft = document.createElement('div');
+      wingLeft.className = 'wing-left';
+      bird.appendChild(wingLeft);
+
+      const wingRight = document.createElement('div');
+      wingRight.className = 'wing-right';
+      bird.appendChild(wingRight);
+
+      const body = document.createElement('div');
+      body.className = 'body';
+      bird.appendChild(body);
+
+      setTimeout(function() {
+        window.location.href = 'quiz.html'; // Replace with your target page URL
+      }, 5000);
+    });
+  </script>
+</body>
+</html>

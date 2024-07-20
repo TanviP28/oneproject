@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Category.css">
+  <title>Honeycomb Layout</title>
+</head>
+<body>
+  <div id="container" class="container">
+    <!-- Hexagons -->
+    <div class="column">
+      <div class="hexagon" style="--index: 0; --column: 0;"></div>
+      <div class="hexagon" style="--index: 1; --column: 0;"></div>
+      <div class="hexagon" style="--index: 2; --column: 0;"></div>
+    </div>
+    <div class="column">
+      <div class="hexagon" style="--index: 0; --column: 1;"></div>
+      <div class="hexagon" style="--index: 1; --column: 1;"></div>
+      <div class="hexagon" style="--index: 2; --column: 1;"></div>
+    </div>
+    <div class="column">
+      <div class="hexagon" style="--index: 0; --column: 2;"></div>
+      <div class="hexagon" style="--index: 1; --column: 2;"></div>
+      <div class="hexagon" style="--index: 2; --column: 2;"></div>
+    </div>
+    <!-- Switch -->
+    <div id="switch" class="switch"></div>
+  </div>
+  <script src="Category.js"></script>
+</body>
+</html>
