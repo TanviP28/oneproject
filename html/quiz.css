@@ -112,9 +112,10 @@ button:hover {
 }
 
 /* Media Queries for Mobile Devices */
+/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   h1 {
@@ -128,7 +129,7 @@ button:hover {
   }
   
   .upper {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
     margin-top: 150px;
   }
@@ -141,7 +142,7 @@ button:hover {
   }
   
   .lower {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
   }
   
@@ -178,7 +179,7 @@ button:hover {
   }
   
   .quiz-container {
-    height: 45%;
+    height: 40%;
     margin: 0 10px;
     margin-top: 40px;
     padding: 5px;
@@ -196,34 +197,37 @@ button:hover {
 
 @media only screen and (min-width: 600px) {
  body {
-    font-size: 16px;
+    font-size: 26px;
   }
   
   h1 {
-    font-size: 24px;
-    margin: 5px;
+    font-size: 32px;
+    margin: 10px;
   }
   
   .question {
-    font-size: 20px;
+    font-size: 30px;
     padding: 5px;
   }
   
   .upper {
-    font-size: 16px;
+    font-size: 30px;
     padding: 8px;
     margin-top: 100px;
   }
   
   .quiz-container {
     height: 45%;
+	width: 55%;
+	align-items: center;
     margin: 0 10px;
-    margin-top: 40px;
+    margin-top: 70px;
+	margin-left:380px;
     padding: 5px;
   }
   
   .lower {
-    font-size: 14px;
+    font-size: 20px;
     padding: 8px;
   }
   
