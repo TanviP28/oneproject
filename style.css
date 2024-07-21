@@ -16,7 +16,7 @@
                 --font-size-normal: 16px;
             }
         }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 400px) {
             :root {
                 --font-size-large: 40px;
                 --font-size-medium: 20px;
