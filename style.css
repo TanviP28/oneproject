@@ -23,6 +23,13 @@
                 --font-size-normal: 14px;
             }
         }
+@media only screen and (min-width: 600px) {
+            :root {
+                --font-size-large: 55px;
+                --font-size-medium: 25px;
+                --font-size-normal: 15px;
+            }
+        }
 		
         
 	
