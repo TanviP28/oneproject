@@ -193,3 +193,43 @@ button:hover {
     margin: 0 10px;
   }
 }
+
+@media only screen and (min-width: 600px) {
+ body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 5px;
+  }
+  
+  .question {
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+  .upper {
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 100px;
+  }
+  
+  .quiz-container {
+    height: auto;
+    margin: 0 10px;
+    margin-top: 40px;
+    padding: 5px;
+  }
+  
+  .lower {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  #buttons {
+    margin: 0 10px;
+  }
+} 
+}
+
